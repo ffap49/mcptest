@@ -1,0 +1,25 @@
+{
+  "identifier": "n8n-weather",
+  "api": [
+    {
+      "url": "https://lmjoylife.app.n8n.cloud/webhook/mcp-trigger",
+      "name": "getWeather",
+      "description": "取得指定城市的天氣資訊。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "需要查詢天氣的城市名稱"
+          }
+        },
+        "required": ["city"]
+      }
+    }
+  ],
+  "meta": {
+    "title": "n8n 天氣查詢",
+    "description": "透過 n8n 工作流查詢即時天氣。",
+    "avatar": "☀️"
+  }
+}
